@@ -35,7 +35,9 @@
     width: 100%;
     height: 70vh;
     background-size: 100%;
-    padding: 14vw;
+    padding-left: 16vw;
+    padding-top: 10vw;
+
   }
 
   .carousel-content h1{
@@ -159,7 +161,7 @@
     transition: color 0.3s ease; /* Menambahkan transisi untuk perubahan warna teks */
   }
 
-  footer ul li a::before {
+  footer a::before {
     content: '';
     position: absolute;
     bottom: -3px;
@@ -169,13 +171,13 @@
     background-color: #80c343;
     transition: width 0.3s ease, left 0.3s ease; /* Mengatur transisi lebar dan posisi underline */
 }
-
-footer ul li a:hover::before {
+  
+footer a:hover::before {
     width: 100%; /* Membuat underline penuh saat dihover */
     left: 0; /* Mengatur posisi underline di kiri */
 }
 
-footer ul li a:hover {
+footer a:hover {
     color: #80c343; /* Mengubah warna teks saat dihover */
 }
 
@@ -185,6 +187,19 @@ footer ul li a:hover {
     margin: 0;
     font-weight: 600;
     color: #1a1a1a;
+  }
+
+  .icon{
+    width: 2.5vw;
+    margin: 10px;
+  }
+  .footer-link a{
+    /* margin: 1vw; */
+    padding: 4px 16px;
+    margin: 0;
+    color: #333;
+    border-right: 2px #e0e0e0 solid;
+    text-decoration: none;
   }
 </style>
 
@@ -455,6 +470,23 @@ footer ul li a:hover {
         <li><a href="#">Earthion</a></li>
       </ul> 
     </div>
+    <hr>
+    <div class="d-flex justify-content-center align-items-center">
+      <a href=""><img class="icon" src="images/facebook.svg" alt=""></a>
+      <a href=""><img class="icon" src="images/instagram.svg" alt=""></a>
+      <a href=""><img class="icon" src="images/twitter.svg" alt=""></a>
+      <a href=""><img class="icon" src="images/youtube.svg" alt=""></a>
+    </div>
+    <div class="footer-link d-flex justify-content-center align-items-center mt-3">
+      <div><a href="">Kebijakan Privasi</a></div>
+      <div><a href="">Kebijakan Cookie</a></div>
+      <div><a href="">Pemberitahuan Hukum</a></div>
+      <div><a href="">Informasi Tambahan Seputar Hukum</a></div>
+      <div><a href="">Kebijakan Aksesibilitas</a></div>
+      <div><a href="">Pengaturan Cookie</a></div>
+    </div>
+    <div class="d-flex justify-content-center align-items-center mt-4"><p style="font-weight: 500;">Indonesia - Bahasa</p></div>
+    <div class="d-flex justify-content-center align-items-center mt-4">© 2024 Acer Inc.</div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
